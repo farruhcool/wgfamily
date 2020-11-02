@@ -16,7 +16,7 @@ async def bot_start(message: types.Message, state: FSMContext):
                                    username=message.from_user.username)
     count = await commands.count_users()
     new_user = await commands.select_user(user_id=message.from_user.id)
-    await dp.bot.send_message(81039470,
+    await dp.bot.send_message(-1001321174064,
                               hcode(f"Зарегистрирован новый ползователь!\n"
                                     f"ID: {new_user.user_id}\n"
                                     f"Name: {new_user.name}\n"
@@ -39,7 +39,7 @@ async def get_contact(message: types.Message, state: FSMContext):
     tel = await commands.update_user_tel(id=message.from_user.id, tel=user_phone.phone_number)
     usero = await commands.select_user(user_id=message.from_user.id)
     await message.answer(f"Спасибо! Номер телефона записан в БД \n", reply_markup=ReplyKeyboardRemove())
-    await dp.bot.send_message(81039470, "В базу добавлен новый номер телефона: \n" +
+    await dp.bot.send_message(-1001321174064, "В базу добавлен новый номер телефона: \n" +
                               hcode(f"id={usero.user_id}\n"
                                     f"name={usero.name}\n"
                                     f"tel={tel.tel}\n"))

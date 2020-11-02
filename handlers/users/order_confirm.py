@@ -21,7 +21,7 @@ async def order_confirm(message: types.Message, state: FSMContext):
     dbwrite = await commands.add_order(customer_id=customer_id, date=date, time=time, type=type, amount=amount,
                                        typeofevent=typeofevent)
 
-    await dp.bot.send_message(81039470,f"id: {order_data.user_id}\n"
+    await dp.bot.send_message(-1001321174064,f"id: {order_data.user_id}\n"
                               f"Имя заказчика: {order_data.name}\n"
                               f"Никнэйм заказчика: @{order_data.username}\n"
                               f"Телефонный номер заказчика: +{order_data.tel}\n"
