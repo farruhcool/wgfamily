@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'd9l5lhftis81m8',  #wgfamilydb
         'USER': 'hsbgiljduunedl',
         'PASSWORD': '0ce4199864b8ed48b9bac66002fde6a96f24154cef1630b4e8d0bad7080b73e8',
-        'HOST': 'ec2-34-251-118-151.eu-west-1.compute.amazonaws.com', #127.0.0.1
+        'HOST': 'ec2-34-251-118-151.eu-west-1.compute.amazonaws.com', #127.0.0.1 sad
         'PORT': '5432',
     }
 }
