@@ -39,6 +39,6 @@ def update_user_tel(id: int, tel):
     return customer
 
 @sync_to_async
-def add_order(customer_id: int, date, time, type, amount: int, typeofevent):
+def add_order(customer_id: int, date, time, type, amount, typeofevent):
     order = Order(customer_id=customer_id,date=date,time=time,type=type,amount=amount,typeofevent=typeofevent).save()
     return order
