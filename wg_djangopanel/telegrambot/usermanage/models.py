@@ -32,7 +32,7 @@ class Order(TimedBaseModel):
     customer_id = models.BigIntegerField(verbose_name="id of customer", default=1)
     date = models.CharField(verbose_name="Date of order",max_length=50)
     time = models.CharField(verbose_name="Time of order", max_length=50)
-    type = models.CharField(verbose_name="Type of order", max_length=50)
-    amount = models.BigIntegerField(verbose_name="Amount")
+    type = models.CharField(verbose_name="Type of order", max_length=100)
+    amount = models.CharField(verbose_name="Amount", max_length=100)
     typeofevent = models.CharField(verbose_name="Typeofevent ", max_length=100)
 
